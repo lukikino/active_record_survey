@@ -11,7 +11,7 @@ group :development, :test do
 	elsif activerecord_version && activerecord_version.strip != ""
 		gem "activerecord", activerecord_version
 	else
-		gem 'activerecord', (ENV['RAILS_VERSION'] || ['>= 3.0', '< 5.0'])
+		gem 'activerecord', (ENV['RAILS_VERSION'] || ['>= 3.0', '<= 5.0'])
 	end
 
 	gem 'coveralls', :require => false
