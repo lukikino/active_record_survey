@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 	spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
 	spec.require_paths = ["lib"]
 
-	spec.add_dependency "activerecord", [">= 3.0", "< 5.0"]
+	spec.add_dependency "activerecord", [">= 3.0"]
 	spec.add_dependency "awesome_nested_set", [">= 3.0"]
 	if RUBY_PLATFORM == 'java'
 		spec.add_development_dependency "jdbc-sqlite3", "> 0"
